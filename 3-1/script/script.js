@@ -1,9 +1,14 @@
 // JavaScript用ファイル
-new Vue({
+new VTTCue({
     el: '#app',
-    data() {
-        return {
-            
+    data(){
+        return{
+            text: 'hello Vue.js'
         };
+    },
+    method:{
+        handleClick(){
+            this.text='button pushed';
+        }
     }
 });
